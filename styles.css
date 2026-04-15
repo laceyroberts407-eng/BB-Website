@@ -10,7 +10,7 @@
   --error: #b42318;
   --shadow: 0 10px 30px rgba(31, 95, 153, 0.08);
   --radius: 18px;
-  --max-width: 1100px;
+  --max-width: 1400px;
 }
 
 * {
@@ -25,7 +25,7 @@ body {
   margin: 0;
   background: var(--white);
   color: var(--text-dark);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
 
@@ -47,7 +47,7 @@ h1,
 h2,
 h3,
 .logo {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Poppins', sans-serif;
   margin-top: 0;
   color: var(--text-dark);
 }
@@ -55,20 +55,26 @@ h3,
 h1 {
   font-size: clamp(2.1rem, 5vw, 3.5rem);
   line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
 }
 
 h2 {
   font-size: clamp(1.7rem, 4vw, 2.4rem);
   margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .container {
-  width: min(92%, var(--max-width));
+  width: min(94%, var(--max-width));
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .site-header {
@@ -102,6 +108,12 @@ h3 {
 .nav a {
   font-weight: 600;
   color: var(--text-dark);
+}
+
+/* Ensure phone button in the nav stays white on colored background */
+.nav a.phone-button,
+.nav .phone-button {
+  color: var(--white);
 }
 
 .nav-phone {
@@ -142,6 +154,7 @@ h3 {
 .section-intro {
   color: var(--text-medium);
   max-width: 700px;
+  margin-top: 0.25rem;
 }
 
 .hero-card,

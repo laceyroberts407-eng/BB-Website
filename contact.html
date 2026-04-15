@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Boulder Boilers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Boulder Boilers</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="service-areas.html">Service Areas</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a class="phone-button nav-phone" href="tel:3035550123">(303) 555-0123</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section alt-section contact-page">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact Us</h2>
+
+          <div class="contact-info">
+            <p>
+                <a class="phone-button inline-button" href="tel:3035550123">(303) 555-0123</a>
+            </p>
+            <p><strong>Boulder, CO</strong></p>
+
+            <p><strong>info@boulderboilers.com</strong> </p>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name <span class="required-star" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span class="required-star" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <!-- Removed optional-contact note; email is now required -->
+          <p id="formError" class="form-error" aria-live="polite"></p>
+          <p id="formSuccess" class="form-success" aria-live="polite"></p>
+
+          <button type="submit" class="button primary-button">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Boulder Boilers</strong>
+        <p>Boulder, CO</p>
+      </div>
+
+      <div class="footer-links">
+        <a class="phone-button" href="tel:3035550123">(303) 555-0123</a>
+        <a href="mailto:info@boulderboilers.com">info@boulderboilers.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

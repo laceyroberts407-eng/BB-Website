@@ -33,13 +33,8 @@ if (contactForm) {
     formError.textContent = "";
     formSuccess.textContent = "";
 
-    if (!name || !message) {
-      formError.textContent = "Please complete your name and message.";
-      return;
-    }
-
-    if (!email && !phone) {
-      formError.textContent = "Please provide either an email address or a phone number.";
+    if (!name || !email || !message) {
+      formError.textContent = "Please complete your name, email, and message.";
       return;
     }
 
