@@ -400,6 +400,17 @@ textarea:focus {
   color: var(--white);
 }
 
+/* Service Areas page background */
+/* Place the map behind the Service Areas section only */
+body.service-areas .alt-section#service-areas {
+  background: none;
+  background-image: url('BoulderMap.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 @media (max-width: 900px) {
   .hero-content,
   .contact-grid,
