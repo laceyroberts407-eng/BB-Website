@@ -164,7 +164,7 @@ h3 {
 .hero-subtext,
 .section-intro {
   color: var(--text-medium);
-  max-width: 700px;
+  max-width: 1000px;
   margin-top: 0.25rem;
 }
 
@@ -447,7 +447,7 @@ body.service-areas .alt-section#service-areas {
   max-height: 100px;
   width: auto;
   margin: 0 auto;
-  opacity: 0.85;
+  opacity: 0.95;
   transition:
     opacity 0.2s ease,
     transform 0.2s ease;
