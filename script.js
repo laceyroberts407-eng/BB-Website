@@ -60,3 +60,14 @@ function isValidEmail(email) {
 function isValidPhone(phone) {
   return /^[0-9()+\-\s.]{7,}$/.test(phone);
 }
+
+function loadHTML(id, file) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    });
+}
+
+loadHTML("header", "header.html");
+loadHTML("footer", "footer.html");

@@ -1,102 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boulder Boilers</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="#top" class="logo">Boulder Boilers</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boulder Boilers</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="header"></div>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-        ☰
-      </button>
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Locally Owned & Operated</p>
+            <h1>Boiler repair, installation, and maintenance</h1>
+            <p class="hero-subtext">Wonderful service at a fair price.</p>
 
-      <nav class="nav" id="navMenu">
-        <a href="service-areas.html">Service Areas</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-        <a class="phone-button nav-phone" href="tel:3035550123">(303) 555-0123</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <p class="eyebrow">Locally Owned & Operated</p>
-          <h1>Boiler repair, installation, and maintenance</h1>
-          <p class="hero-subtext">
-            Wonderful service at a fair price.
-          </p>
-
-          <div class="hero-buttons">
-            <a class="button primary-button" href="tel:3035550123">Call (303) 555-0123</a>
-            <a class="button secondary-button" href="contact.html">Request Service</a>
+            <div class="hero-buttons">
+              <a class="button primary-button" href="tel:3035550123"
+                >Call (303) 555-0123</a
+              >
+              <a class="button secondary-button" href="contact.html"
+                >Request Service</a
+              >
+            </div>
           </div>
         </div>
+      </section>
 
-        
-      </div>
-    </section>
+      <section class="section" id="services">
+        <div class="container">
+          <h2>Our Services</h2>
+          <p class="section-intro">
+            Boulder Boilers provides dependable heating support for homes and
+            small businesses.
+          </p>
 
-    <section class="section" id="services">
-      <div class="container">
-        <h2>Our Services</h2>
-        <p class="section-intro">
-          Boulder Boilers provides dependable heating support for homes and small businesses.
-        </p>
+          <div class="cards">
+            <article class="card">
+              <h3>Boiler Repair</h3>
+              <p>
+                Diagnose heating issues, restore performance, and get your
+                system running safely.
+              </p>
+            </article>
 
-        <div class="cards">
-          <article class="card">
-            <h3>Boiler Repair</h3>
-            <p>
-              Diagnose heating issues, restore performance, and get your system running safely.
-            </p>
-          </article>
+            <article class="card">
+              <h3>Boiler Installation</h3>
+              <p>
+                Upgrade aging systems with efficient equipment and professional
+                installation.
+              </p>
+            </article>
 
-          <article class="card">
-            <h3>Boiler Installation</h3>
-            <p>
-              Upgrade aging systems with efficient equipment and professional installation.
-            </p>
-          </article>
+            <article class="card">
+              <h3>Boiler Maintenance</h3>
+              <p>
+                Prevent breakdowns and extend equipment life with regular
+                inspections and tune-ups.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-          <article class="card">
-            <h3>Boiler Maintenance</h3>
-            <p>
-              Prevent breakdowns and extend equipment life with regular inspections and tune-ups.
-            </p>
-          </article>
+      <section class="section brands">
+        <div class="container">
+          <h2>Brands We Use</h2>
+          <p class="section-intro">
+            We work with trusted, industry-leading manufacturers to ensure
+            reliable performance and long-term durability.
+          </p>
+
+          <div class="brand-logos">
+            <img src="TACO logo.svg" alt="Taco logo" />
+            <img src="viessmann-logo.png" alt="Viessmann logo" />
+            <img src="grundfos-logo.svg" alt="Grundfos logo" />
+            <img src="watts-logo.png" alt="Watts logo" />
+            <img src="caleffi-logo.jpg" alt="Caleffi logo" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <strong>Boulder Boilers</strong>
+          <p>Boulder, CO</p>
         </div>
 
+        <div class="footer-links">
+          <a class="phone-button" href="tel:3035550123">(303) 555-0123</a>
+          <a href="mailto:info@boulderboilers.com">info@boulderboilers.com</a>
+        </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- Service Areas and FAQ moved to separate pages: service-areas.html and faq.html -->
-
-    <!-- Contact form moved to contact.html -->
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div>
-        <strong>Boulder Boilers</strong>
-        <p>Boulder, CO</p>
-      </div>
-
-      <div class="footer-links">
-        <a class="phone-button" href="tel:3035550123">(303) 555-0123</a>
-        <a href="mailto:info@boulderboilers.com">info@boulderboilers.com</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

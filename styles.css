@@ -25,7 +25,7 @@ body {
   margin: 0;
   background: var(--white);
   color: var(--text-dark);
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
 
@@ -47,7 +47,7 @@ h1,
 h2,
 h3,
 .logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 0;
   color: var(--text-dark);
 }
@@ -110,6 +110,13 @@ h3 {
   color: var(--text-dark);
 }
 
+/* Nav links: change color on hover instead of underlining (exclude phone button)
+   This overrides the global `a:hover` underline for nav items. */
+.nav a:not(.phone-button):hover {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
 /* Ensure phone button in the nav stays white on colored background */
 .nav a.phone-button,
 .nav .phone-button {
@@ -131,7 +138,11 @@ h3 {
 
 .hero {
   padding: 4.5rem 0 3.5rem;
-  background: linear-gradient(to bottom, var(--primary-blue-light), var(--white));
+  background: linear-gradient(
+    to bottom,
+    var(--primary-blue-light),
+    var(--white)
+  );
 }
 
 .hero-content {
@@ -195,7 +206,10 @@ h3 {
   text-align: center;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
   text-decoration: none;
 }
 
@@ -324,6 +338,11 @@ h3 {
   padding: 1.5rem;
 }
 
+/* Slightly larger submit button on contact page */
+#contactForm button {
+  font-size: 1.05rem;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -404,11 +423,45 @@ textarea:focus {
 /* Place the map behind the Service Areas section only */
 body.service-areas .alt-section#service-areas {
   background: none;
-  background-image: url('BoulderMap.png');
-  background-size: cover;
-  background-position: center;
+  background-image: url("BoulderMap.png");
+  background-size: 80%;
+  background-position: center 30%;
   background-repeat: no-repeat;
   position: relative;
+  min-height: 70vh;
+}
+
+.brands {
+  text-align: center;
+}
+
+.brand-logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.brand-logos img {
+  max-height: 100px;
+  width: auto;
+  margin: 0 auto;
+  opacity: 0.85;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.brand-logos img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  body.service-areas .alt-section#service-areas {
+    background-size: 130%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -460,4 +513,31 @@ body.service-areas .alt-section#service-areas {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--primary-blue-dark);
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.logo-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+
+.logo:hover {
+  text-decoration: none;
 }
