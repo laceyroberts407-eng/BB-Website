@@ -447,15 +447,10 @@ body.service-areas .alt-section#service-areas {
   max-height: 100px;
   width: auto;
   margin: 0 auto;
-  opacity: 0.95;
+  opacity: 1;
   transition:
     opacity 0.2s ease,
     transform 0.2s ease;
-}
-
-.brand-logos img:hover {
-  opacity: 1;
-  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

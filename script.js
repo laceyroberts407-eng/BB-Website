@@ -33,8 +33,8 @@ if (contactForm) {
     formError.textContent = "";
     formSuccess.textContent = "";
 
-    if (!name || !email || !message) {
-      formError.textContent = "Please complete your name, email, and message.";
+    if (!name || !email) {
+      formError.textContent = "Please complete your name and email.";
       return;
     }
 
@@ -43,12 +43,8 @@ if (contactForm) {
       return;
     }
 
-    if (phone && !isValidPhone(phone)) {
-      formError.textContent = "Please enter a valid phone number.";
-      return;
-    }
-
-    formSuccess.textContent = "Your message is ready to send. Connect this form to Netlify Forms, Formspree, or another form service to receive submissions.";
+    formSuccess.textContent =
+      "Thank you for your inquiry, we'll be in touch as soon as possible.";
     contactForm.reset();
   });
 }
@@ -63,8 +59,8 @@ function isValidPhone(phone) {
 
 function loadHTML(id, file) {
   fetch(file)
-    .then(response => response.text())
-    .then(data => {
+    .then((response) => response.text())
+    .then((data) => {
       document.getElementById(id).innerHTML = data;
     });
 }
